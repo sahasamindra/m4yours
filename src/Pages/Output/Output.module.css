@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 0.65rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.eachItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed var(--primaryTheme);
+}

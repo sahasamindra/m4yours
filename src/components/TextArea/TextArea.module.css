@@ -1,0 +1,20 @@
+.textContainer {
+  position: relative;
+}
+
+.textArea {
+  background: transparent;
+  color: var(--primaryFontOpacity);
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 5px;
+}
+
+.deleteIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--primaryTheme);
+  cursor: pointer;
+}

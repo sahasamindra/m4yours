@@ -1,0 +1,9 @@
+.imageContainer {
+  position: relative;
+}
+
+.uploadedImage {
+  max-width: auto;
+  max-height: 100%;
+  padding: 5px;
+}

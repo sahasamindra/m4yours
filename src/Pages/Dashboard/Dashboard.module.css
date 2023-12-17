@@ -1,0 +1,146 @@
+.layout {
+  display: grid;
+  grid-template-rows: 48px 1fr;
+  /* grid-template-columns: 260px 1fr 260px; */
+  grid-template-columns: minmax(260px, 300px) minmax(340px, 1fr) minmax(
+      260px,
+      340px
+    );
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+/* --------------- header --------------- */
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  background: #2b2b2b;
+  border-bottom: 1px solid #575757;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 13px 0 0 26px;
+  color: var(--primaryFont);
+  font-family: IBMbold;
+}
+
+.customIcons {
+  background-color: transparent;
+  border: none;
+  color: var(--primaryFont);
+  cursor: pointer;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.utilityButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.65rem;
+}
+
+.publish {
+  background-color: var(--primaryTheme);
+  border: none;
+  color: var(--primaryFont);
+  min-width: 175px;
+  cursor: pointer;
+}
+
+/* --------------- left menu --------------- */
+
+.leftMenu {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  background: var(--primaryBG);
+  padding: 26px;
+}
+
+/* --------------- right menu --------------- */
+.rightMenu {
+  background: var(--primaryBG);
+  padding: 26px;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+.title2 {
+  color: var(--primaryFont);
+  font-family: publicSemiBold;
+}
+
+.blockHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editorInput {
+  margin: 20px 0;
+  border: none;
+  background-color: transparent;
+  color: var(--primaryFontOpacity);
+  width: 100%;
+}
+
+.editorInput:focus {
+  outline: none;
+  caret-color: var(--primaryFont);
+}
+
+/* --------------- workspace --------------- */
+
+.workspace {
+  background: var(--secondaryBG);
+}
+
+.draggableArea {
+  border: 1px dashed var(--primaryBorder);
+  min-width: 300px;
+  min-height: 500px;
+  margin: 1.65rem;
+  border-radius: 0.65rem;
+  position: relative;
+  padding: 5px;
+}
+
+.instructionBlock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primaryFontOpacity);
+  gap: 1rem;
+}
+
+.draggableAreaHighlighted {
+  border: 1px solid #3370f5;
+}
+
+@media screen and (max-width: 1023px) {
+  .layout {
+    display: grid;
+    grid-template-rows: 48px 1fr;
+    /* grid-template-columns: 260px 1fr 260px; */
+    grid-template-columns: 1fr;
+    height: 100vh;
+    /* border: 1px solid red; */
+  }
+
+  .rightMenu,
+  .leftMenu {
+    display: none;
+  }
+}

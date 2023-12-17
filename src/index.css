@@ -1,0 +1,86 @@
+:root {
+  --primaryFont: rgba(255, 255, 255);
+  --primaryFontOpacity: rgba(255, 255, 255, 0.6);
+  --primaryBG: #2b2b2b;
+  --secondaryBG: #1e1e1e;
+  --primaryBorder: #575757;
+  --primaryTheme: #f1614a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1;
+  font-family: publicRegular;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: "publicRegular";
+  src: local("PublicSans-Regular"),
+    url("./fonts/PublicSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "publicSemiBold";
+  src: local("PublicSans-SemiBold"),
+    url("./fonts/PublicSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBMbold";
+  src: local("IBMPlexSans-Bold"),
+    url("./fonts/IBMPlexSans-Bold.ttf") format("truetype");
+}

@@ -1,0 +1,33 @@
+.block {
+  background-color: #2f3031;
+  border: 1px solid #2f3031;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--primaryFontOpacity);
+  font-size: 0.825rem;
+}
+
+.block:hover,
+.blockFunctional:hover {
+  border: 1px solid var(--primaryBorder);
+  cursor: grab;
+}
+
+.blockFunctional {
+  background-color: var(--primaryTheme);
+  border: 1px solid #8d9094;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--primaryFontOpacity);
+  font-size: 0.825rem;
+}

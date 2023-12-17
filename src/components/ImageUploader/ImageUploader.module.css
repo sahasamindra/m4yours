@@ -1,0 +1,30 @@
+.uploadedImage {
+  max-width: auto;
+  max-height: 100%;
+}
+
+.uploadDialog {
+  color: var(--primaryFontOpacity);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50%;
+  transform: translateY(-100%);
+  gap: 1rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.deleteIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--primaryTheme);
+  cursor: pointer;
+}

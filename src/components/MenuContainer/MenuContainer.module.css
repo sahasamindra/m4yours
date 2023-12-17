@@ -1,0 +1,26 @@
+.blockHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-right: 8px; */
+}
+
+.title2 {
+  color: var(--primaryFont);
+  font-family: publicSemiBold;
+}
+
+.customIcons {
+  background-color: transparent;
+  border: none;
+  color: var(--primaryFont);
+  cursor: pointer;
+}
+
+.blocks {
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
